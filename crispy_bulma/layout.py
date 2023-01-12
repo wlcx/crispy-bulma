@@ -280,7 +280,6 @@ class FormGroup(LayoutObject):
         # passed on to `field.render` in `render_field` which is called by `get_rendered_fields`.
         # Right now `exclude_field_wrapper` is being passed on also to `formgroup.html`,
         # but it does not break anything.
-        context["exclude_field_wrapper"] = True
         html = self.get_rendered_fields(
             form, form_style, context, template_pack, **kwargs
         )
