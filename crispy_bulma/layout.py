@@ -92,6 +92,8 @@ class Button(TemplateNameMixin):
         self.content = content
         self.template = kwargs.pop("template", self.template)
         self.control_class = kwargs.pop("control_class", None)
+        self.icon_prepend = kwargs.pop("icon_prepend", None)
+        self.icon_append = kwargs.pop("icon_append", None)
 
         # We turn css_id and css_class into id and class
         if "css_id" in kwargs:
@@ -109,6 +111,10 @@ class Button(TemplateNameMixin):
         extra_context = {"button": self}
         if self.control_class:
             extra_context["control_class"] = self.control_class
+        if self.icon_prepend:
+            extra_context["icon_prepend"] = self.icon_prepend
+        if self.icon_append:
+            extra_context["icon_append"] = self.icon_append
 
         context.update(extra_context)
         return render_to_string(template, context.flatten())

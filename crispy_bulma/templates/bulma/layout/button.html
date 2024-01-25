@@ -13,7 +13,25 @@
 {% endif %}
 
 <div class="control{% if control_class %} {{ control_class }}{% endif %}">
-  <button {{ button.flat_attrs }}>{{ button.content|safe }}</button>
+  <button {{ button.flat_attrs }}>
+    {% if icon_prepend %}
+      <span class="icon is-small">
+        <span class="{{ icon_prepend }}"></span>
+      </span>
+    {% endif %}
+    {% if icon_prepend or icon_append %}
+      <span>
+        {{ button.content|safe }}
+      </span>
+    {% else %}
+        {{ button.content|safe }}
+    {% endif %}
+    {% if icon_append %}
+      <span class="icon is-small">
+        <span class="{{ icon_append }}"></span>
+      </span>
+    {% endif %}
+  </button>
 </div>
 
 {% if not exclude_field_wrapper %}
