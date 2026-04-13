@@ -11,7 +11,7 @@ with open("HISTORY.rst") as history_file:
 
 setup(
     name="crispy-bulma",
-    version="0.11.0",
+    version="0.12.0",
     description="Bulma template pack for django-crispy-forms",
     long_description=readme + "\n\n" + history,
     author="Christoph Krybus",
@@ -37,6 +37,8 @@ setup(
         "Framework :: Django",
         "Framework :: Django :: 4.2",
         "Framework :: Django :: 5.0",
+        "Framework :: Django :: 5.1",
+        "Framework :: Django :: 5.2",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
@@ -47,6 +49,7 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Topic :: Software Development :: Libraries :: Python Modules",

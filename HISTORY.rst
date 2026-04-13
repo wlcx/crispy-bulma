@@ -3,11 +3,15 @@ History
 =======
 
 
-Unreleased
-----------
+0.12.0 (2025-05-11)
+-------------------
 
 * Feature: add support for ``Fieldset``. Feature contributed by DaeronAlagos.
-* Add support for Bulma 1.0.0
+* Add support for Bulma 1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4
+* Add support for Django 5.1
+* Add support for Django 5.2
+* Add support for Python 3.13
+* Add support for django-crispy-forms 2.2, 2.3, 2.4
 
 
 0.11.0 (2023-12-06)
